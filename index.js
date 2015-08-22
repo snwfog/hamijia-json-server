@@ -40,12 +40,7 @@ function createMessage(id) {
 }
 
 function createConversation(id, messages) {
-  var messageIds = _.pluck(_.select(messages, function(message) {
-    console.log('Inside of a message', message);
-    console.log('The id is', id+1);
-    return message.conversation === id+1;
-  }), 'id');
-  console.log(messageIds);
+  var messageIds = _.pluck(_.select(messages, function(message) { return message.conversation === id+1; }), 'id');
   return {
     id: id+1,
     created_at: _.now(),
