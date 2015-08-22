@@ -1,0 +1,24 @@
+{
+  "name": "hamijia-json-server",
+  "version": "1.0.0",
+  "description": "A testing / fixture JSON API server for Hamijia development. Cause Im sick of exceeding the developer limit for Post Canada geocode every night for 3 API keys...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snwfog/hamijia-json-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snwfog/hamijia-json-server/issues"
+  },
+  "homepage": "https://github.com/snwfog/hamijia-json-server",
+  "devDependencies": {
+    "casual": "^1.4.7",
+    "faker": "^3.0.1",
+    "lodash": "^3.10.1"
+  }
+}
