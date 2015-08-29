@@ -32,7 +32,7 @@ function createAuthor(id) {
 function createMessage(id) {
   return {
     id: id+1,
-    created_at: _.now(),
+    created_at: casual.moment.format('YYYY-MM-DD HH:MM:SS.SSS'),
     message: casual.sentences(_.random(1, 3)),
     conversation: _.random(1, nbrConversation),
     author: _.random(1, nbrAuthor),
@@ -43,8 +43,8 @@ function createConversation(id, messages) {
   var messageIds = _.pluck(_.select(messages, function(message) { return message.conversation === id+1; }), 'id');
   return {
     id: id+1,
-    created_at: _.now(),
-    updated_at: _.now(),
+    subject: _.random(1, nbrAuthor),
+    updated_at: casual.moment.format('YYYY-MM-DD HH:MM:SS.SSS'),
     messages: messageIds,
   };
 }

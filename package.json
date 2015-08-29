@@ -4,6 +4,7 @@
   "description": "A testing / fixture JSON API server for Hamijia development. Cause Im sick of exceeding the developer limit for Post Canada geocode every night for 3 API keys...",
   "main": "index.js",
   "scripts": {
+    "start": "json-server -w index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
